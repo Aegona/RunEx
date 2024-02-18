@@ -59,7 +59,6 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.238444611, 0, 0.273170739, 0)
 Frame.Size = UDim2.new(0.523110807, 0, 0.453658551, 0)
-Frame.Visible = false
 
 UICorner.Parent = Frame
 
@@ -106,7 +105,6 @@ BG1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 BG1.BorderSizePixel = 0
 BG1.Position = UDim2.new(0.115007013, 0, 0.0698924735, 0)
 BG1.Size = UDim2.new(0.841514647, 0, 0.782258093, 0)
-BG1.Visible = false
 BG1.Font = Enum.Font.SourceSans
 BG1.PlaceholderText = ">>>>>>>SCRIPT>>>>>>>"
 BG1.Text = ""
@@ -318,7 +316,7 @@ UITextSizeConstraint_10.MaxTextSize = 14
 
 -- Scripts:
 
-local function MGAWWHK_fake_script() -- menu1.LocalScript 
+local function ELHMUPT_fake_script() -- menu1.LocalScript 
 	local script = Instance.new('LocalScript', menu1)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -326,8 +324,8 @@ local function MGAWWHK_fake_script() -- menu1.LocalScript
 		script.Parent.Parent.BG2.Visible = false
 	end)
 end
-coroutine.wrap(MGAWWHK_fake_script)()
-local function SSAE_fake_script() -- Attack.LocalScript 
+coroutine.wrap(ELHMUPT_fake_script)()
+local function WPFHBN_fake_script() -- Attack.LocalScript 
 	local script = Instance.new('LocalScript', Attack)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -337,24 +335,32 @@ local function SSAE_fake_script() -- Attack.LocalScript
 		attacktex.Visible = false
 	end)
 end
-coroutine.wrap(SSAE_fake_script)()
-local function CQNN_fake_script() -- LoadClib.LocalScript 
+coroutine.wrap(WPFHBN_fake_script)()
+local function MTJBA_fake_script() -- LoadClib.LocalScript 
 	local script = Instance.new('LocalScript', LoadClib)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.BG1.Text = "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aegona/Scriptkey1/main/README.md))()"
 	end)
 end
-coroutine.wrap(CQNN_fake_script)()
-local function VQJJ_fake_script() -- Run.LocalScript 
+coroutine.wrap(MTJBA_fake_script)()
+local function HMICZP_fake_script() -- Run.LocalScript 
 	local script = Instance.new('LocalScript', Run)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Aegona/Scriptkey1/main/README.md"), true))()
+		local TextBox = script.Parent.Parent.Parent.BG1
+		local scriptText = TextBox.Text
+		local success, result = pcall(loadstring(scriptText))
+	
+		if success then
+			print("Script executed successfully")
+		else
+			warn("Error executing script:", result)
+		end
 	end)
 end
-coroutine.wrap(VQJJ_fake_script)()
-local function RUCL_fake_script() -- menu2.LocalScript 
+coroutine.wrap(HMICZP_fake_script)()
+local function CEMV_fake_script() -- menu2.LocalScript 
 	local script = Instance.new('LocalScript', menu2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -362,8 +368,8 @@ local function RUCL_fake_script() -- menu2.LocalScript
 		script.Parent.Parent.BG2.Visible = true
 	end)
 end
-coroutine.wrap(RUCL_fake_script)()
-local function FLUGP_fake_script() -- Frame.LocalScript 
+coroutine.wrap(CEMV_fake_script)()
+local function QMXZBUN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -436,8 +442,8 @@ local function FLUGP_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(FLUGP_fake_script)()
-local function QRILI_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(QMXZBUN_fake_script)()
+local function JVKTU_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -448,4 +454,4 @@ local function QRILI_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QRILI_fake_script)()
+coroutine.wrap(JVKTU_fake_script)()
