@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -33,10 +30,23 @@ local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
-local TextButton = Instance.new("TextButton")
+local menu2 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
 local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local BG2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local TextButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -49,6 +59,7 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.238444611, 0, 0.273170739, 0)
 Frame.Size = UDim2.new(0.523110807, 0, 0.453658551, 0)
+Frame.Visible = false
 
 UICorner.Parent = Frame
 
@@ -95,6 +106,7 @@ BG1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 BG1.BorderSizePixel = 0
 BG1.Position = UDim2.new(0.115007013, 0, 0.0698924735, 0)
 BG1.Size = UDim2.new(0.841514647, 0, 0.782258093, 0)
+BG1.Visible = false
 BG1.Font = Enum.Font.SourceSans
 BG1.PlaceholderText = ">>>>>>>SCRIPT>>>>>>>"
 BG1.Text = ""
@@ -179,8 +191,8 @@ AttacTex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AttacTex.BackgroundTransparency = 1.000
 AttacTex.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AttacTex.BorderSizePixel = 0
-AttacTex.Position = UDim2.new(0.0783333331, 0, -0.487972498, 0)
-AttacTex.Size = UDim2.new(0.75666672, 0, 0.171821311, 0)
+AttacTex.Position = UDim2.new(-0.0533333905, 0, -0.522336781, 0)
+AttacTex.Size = UDim2.new(1.10333347, 0, 0.257731944, 0)
 AttacTex.Visible = false
 AttacTex.Font = Enum.Font.SourceSansBold
 AttacTex.Text = "Attack Suscess"
@@ -204,6 +216,84 @@ UITextSizeConstraint_6.MaxTextSize = 14
 UIAspectRatioConstraint_8.Parent = Frame
 UIAspectRatioConstraint_8.AspectRatio = 1.917
 
+menu2.Name = "menu2"
+menu2.Parent = Frame
+menu2.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+menu2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+menu2.BorderSizePixel = 0
+menu2.Position = UDim2.new(0, 0, 0.319892466, 0)
+menu2.Rotation = 11.000
+menu2.Size = UDim2.new(0.0715287551, 0, 0.134408608, 0)
+menu2.Font = Enum.Font.SourceSansBold
+menu2.Text = "Menu2"
+menu2.TextColor3 = Color3.fromRGB(255, 255, 255)
+menu2.TextScaled = true
+menu2.TextSize = 14.000
+menu2.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 80)
+UICorner_8.Parent = menu2
+
+UIAspectRatioConstraint_9.Parent = menu2
+UIAspectRatioConstraint_9.AspectRatio = 1.020
+
+UITextSizeConstraint_7.Parent = menu2
+UITextSizeConstraint_7.MaxTextSize = 14
+
+BG2.Name = "BG2"
+BG2.Parent = Frame
+BG2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+BG2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BG2.BorderSizePixel = 0
+BG2.Position = UDim2.new(0.115000002, 0, 0.0700000003, 0)
+BG2.Size = UDim2.new(0.842000008, 0, 0.782000005, 0)
+BG2.Visible = false
+
+UICorner_9.Parent = BG2
+
+UIAspectRatioConstraint_10.Parent = BG2
+UIAspectRatioConstraint_10.AspectRatio = 2.064
+
+TextLabel.Parent = BG2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0116472542, 0, 0.0341790244, 0)
+TextLabel.Size = UDim2.new(1.00108933, 0, 0.17187801, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Auto Run Script = False"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint_11.Parent = TextLabel
+UIAspectRatioConstraint_11.AspectRatio = 12.020
+
+UITextSizeConstraint_8.Parent = TextLabel
+UITextSizeConstraint_8.MaxTextSize = 50
+
+TextLabel_2.Parent = BG2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0116472542, 0, 0.205162913, 0)
+TextLabel_2.Size = UDim2.new(1.00108933, 0, 0.17187801, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Auto Delete Workspack Flie = true"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIAspectRatioConstraint_12.Parent = TextLabel_2
+UIAspectRatioConstraint_12.AspectRatio = 12.020
+
+UITextSizeConstraint_9.Parent = TextLabel_2
+UITextSizeConstraint_9.MaxTextSize = 50
+
 TextButton.Parent = ScreenGui
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -217,18 +307,27 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-UICorner_8.CornerRadius = UDim.new(0, 80)
-UICorner_8.Parent = TextButton
+UICorner_10.CornerRadius = UDim.new(0, 80)
+UICorner_10.Parent = TextButton
 
-UIAspectRatioConstraint_9.Parent = TextButton
-UIAspectRatioConstraint_9.AspectRatio = 0.980
+UIAspectRatioConstraint_13.Parent = TextButton
+UIAspectRatioConstraint_13.AspectRatio = 0.980
 
-UITextSizeConstraint_7.Parent = TextButton
-UITextSizeConstraint_7.MaxTextSize = 14
+UITextSizeConstraint_10.Parent = TextButton
+UITextSizeConstraint_10.MaxTextSize = 14
 
 -- Scripts:
 
-local function CGGON_fake_script() -- Attack.LocalScript 
+local function MGAWWHK_fake_script() -- menu1.LocalScript 
+	local script = Instance.new('LocalScript', menu1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.BG1.Visible = true
+		script.Parent.Parent.BG2.Visible = false
+	end)
+end
+coroutine.wrap(MGAWWHK_fake_script)()
+local function SSAE_fake_script() -- Attack.LocalScript 
 	local script = Instance.new('LocalScript', Attack)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -238,24 +337,107 @@ local function CGGON_fake_script() -- Attack.LocalScript
 		attacktex.Visible = false
 	end)
 end
-coroutine.wrap(CGGON_fake_script)()
-local function VESI_fake_script() -- LoadClib.LocalScript 
+coroutine.wrap(SSAE_fake_script)()
+local function CQNN_fake_script() -- LoadClib.LocalScript 
 	local script = Instance.new('LocalScript', LoadClib)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.BG1.Text = "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aegona/Scriptkey1/main/README.md))()"
 	end)
 end
-coroutine.wrap(VESI_fake_script)()
-local function JRZPT_fake_script() -- Run.LocalScript 
+coroutine.wrap(CQNN_fake_script)()
+local function VQJJ_fake_script() -- Run.LocalScript 
 	local script = Instance.new('LocalScript', Run)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Aegona/Scriptkey1/main/README.md"), true))()
 	end)
 end
-coroutine.wrap(JRZPT_fake_script)()
-local function NKYEQET_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(VQJJ_fake_script)()
+local function RUCL_fake_script() -- menu2.LocalScript 
+	local script = Instance.new('LocalScript', menu2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.BG1.Visible = false
+		script.Parent.Parent.BG2.Visible = true
+	end)
+end
+coroutine.wrap(RUCL_fake_script)()
+local function FLUGP_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+end
+coroutine.wrap(FLUGP_fake_script)()
+local function QRILI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -266,4 +448,4 @@ local function NKYEQET_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NKYEQET_fake_script)()
+coroutine.wrap(QRILI_fake_script)()
